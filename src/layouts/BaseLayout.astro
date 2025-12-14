@@ -1,9 +1,12 @@
 ---
+import "../styles/main.css";
+
 const {
   title = "Renato Moreira",
   description = "Renato Moreira – Lisbon-born, Porto-based. Music producer, live performer, sound & AV specialist."
 } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,7 +14,6 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="stylesheet" href="/styles/main.css" />
   </head>
 
   <body>
@@ -36,9 +38,9 @@ const {
       <div class="wrap footer-inner">
         <div>© {new Date().getFullYear()} Renato Moreira</div>
         <div class="footer-links">
-          <a href="https://soundcloud.com/renlab" target="_blank">SoundCloud</a>
-          <a href="https://labdark.bandcamp.com/" target="_blank">Bandcamp</a>
-          <a href="https://www.youtube.com/@labbosmerandunikorp1030" target="_blank">YouTube</a>
+          <a href="https://soundcloud.com/renlab" target="_blank" rel="noreferrer">SoundCloud</a>
+          <a href="https://labdark.bandcamp.com/" target="_blank" rel="noreferrer">Bandcamp</a>
+          <a href="https://www.youtube.com/@labbosmerandunikorp1030" target="_blank" rel="noreferrer">YouTube</a>
         </div>
       </div>
     </footer>
