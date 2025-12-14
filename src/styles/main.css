@@ -55,6 +55,15 @@ a {
   color: var(--fg);
   text-decoration: none;
 }
+a::before,
+a::after {
+  pointer-events: none;
+}
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 
 /* ==============================
    HEADER / NAV
@@ -312,7 +321,21 @@ html {
 	border-color: rgba(255,255,255,0.18);
 	background: rgba(255,255,255,0.06);
   }
-  
+  /* Project cards */
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
   /* Navigation */
   .nav a {
 	position: relative;
@@ -410,5 +433,30 @@ html {
   .section {
     margin-top: 56px;
   }
+}
+.project-image {
+  pointer-events: none;
+}
+.project a {
+  pointer-events: auto;
+}
+.section::before,
+.section::after,
+h1::before,
+h1::after,
+h2::before,
+h2::after,
+h3::before,
+h3::after {
+  content: none !important;
+}
+.card {
+  display: block;
+  padding: 22px 24px;
+  border-radius: 14px;
+}
+.section .card:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.04);
 }
 
