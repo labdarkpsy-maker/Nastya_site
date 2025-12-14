@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Contact - Renato Moreira"
+  description="Contact Renato Moreira for music, sound and audiovisual work."
+>
+  <section class="card">
+    <h1>Contact</h1>
+
+    <p>
+      For bookings, collaborations, technical work or professional inquiries,
+      please use the contact details below.
+    </p>
+
+    <p>
+      Clear communication and well-defined contexts are appreciated.
+    </p>
+  </section>
+
+  <section class="section card">
+    <h2 style="margin-top:0">Email</h2>
+
+    <p>
+      <strong>
+        <a href="mailto:contact@renatomoreira.net">
+          contact@renatomoreira.net
+        </a>
+      </strong>
+    </p>
+
+    <p class="muted">
+      Please include relevant details such as dates, location, technical context
+      and expected scope when applicable.
+    </p>
+  </section>
+
+  <section class="section card">
+    <h2 style="margin-top:0">Platforms</h2>
+
+    <div class="links">
+      <a href="https://soundcloud.com/renlab" target="_blank" rel="noreferrer">
+        SoundCloud
+      </a>
+      <a href="https://labdark.bandcamp.com/" target="_blank" rel="noreferrer">
+        Bandcamp
+      </a>
+      <a href="https://www.youtube.com/@labbosmerandunikorp1030" target="_blank" rel="noreferrer">
+        YouTube
+      </a>
+    </div>
+  </section>
+
+  <section class="section card">
+    <p class="muted">
+      Lisbon-born, Porto-based.
+    </p>
+  </section>
+
+  <style>
+    .links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .muted {
+      color: var(--muted);
+    }
+  </style>
+</BaseLayout>
