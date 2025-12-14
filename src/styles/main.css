@@ -301,7 +301,12 @@ html {
   .card {
 	transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
   }
-  
+  .card {
+    padding: 24px;
+  }
+  .links a {
+    margin-right: 16px;
+  }
   .card:hover {
 	transform: translateY(-2px);
 	border-color: rgba(255,255,255,0.18);
@@ -350,7 +355,7 @@ html {
 	  animation: none !important;
 	}
   }
-  
+
   /* ------------------------------
    MOBILE ADJUSTMENTS
 -------------------------------- */
