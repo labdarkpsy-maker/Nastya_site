@@ -476,4 +476,21 @@ h3::after {
   transform: translateY(-1px);
   background: rgba(255,255,255,0.04);
 }
+/* Bosmer needs contextual framing (forest visibility) */
+.project-bosmer .project-image {
+  object-position: center top;
+}
+.project-bosmer .project-image {
+  position: relative;
+}
+
+.project-bosmer .project-image {
+  position: relative;
+}
+
+.project-image {
+  height: 120px;
+  object-fit: cover;
+}
+
 
