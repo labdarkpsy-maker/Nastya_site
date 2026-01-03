@@ -476,6 +476,62 @@ h3::after {
   transform: translateY(-1px);
   background: rgba(255,255,255,0.04);
 }
+
+/* Timeline (two-track) */
+.timeline-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:24px;
+}
+
+.timeline-title{
+  margin:0 0 12px;
+  font-size:20px;
+}
+
+.timeline-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.timeline-item{
+  display:grid;
+  grid-template-columns: 92px 1fr;
+  gap:14px;
+  padding:14px 0;
+  border-top:1px solid var(--line);
+}
+
+.timeline-item:first-child{
+  border-top:1px solid var(--line);
+}
+
+.timeline-year{
+  color:var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.timeline-heading{
+  font-weight:700;
+}
+
+.timeline-detail{
+  color:var(--muted);
+  margin-top:6px;
+  line-height:1.5;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .timeline-grid{ grid-template-columns:1fr; }
+  .timeline-item{ grid-template-columns: 82px 1fr; }
+}
+
 /* Text-heavy sections (Teaching, long reads) */
 .section.text {
   margin-top: 24px;
