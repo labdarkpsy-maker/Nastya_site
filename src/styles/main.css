@@ -16,6 +16,17 @@ body {
   line-height: 1.55;
 }
 
+/* Lists */
+.bullets{
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.bullets li{
+  margin: 6px 0;
+}
+
 /* Layout container */
 .wrap {
   max-width: 1100px;
