@@ -9,9 +9,9 @@ const {
 const path = Astro.url.pathname;
 
 // helper to check if a nav link is active
-const isActive = (href) =>
+const isActive = (href: string) =>
   path === href || path.startsWith(href + "/");
----
+
 ---
 
 <!doctype html>
