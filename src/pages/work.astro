@@ -1,23 +1,34 @@
-
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const caseStudies = [
+  {
+    slug: "project-1",
+    title: "Project Title",
+    role: "Narrative Designer",
+    platform: "PC / Console",
+    note: "Coming soon"
+  },
+  {
+    slug: "project-2",
+    title: "Project Title",
+    role: "Writer / Narrative",
+    platform: "Mobile",
+    note: "Coming soon"
+  }
+];
+
+const samples = [
+  { title: "Dialogue sample", note: "Coming soon" },
+  { title: "Quest / branching sample", note: "Coming soon" }
+];
 ---
 
-<BaseLayout title="Work">
-  <section class="prose max-w-3xl">
+<BaseLayout
+  title="Work - Anastasia Bessonova"
+  description="Selected narrative design work, case studies, and writing samples."
+>
+  <section class="card">
     <h1>Work</h1>
-    <p>Selected narrative design work - case studies and writing samples.</p>
-
-    <h2>Case studies</h2>
-    <ul>
-      <li><strong>Project Title</strong> - Role, platform - <em>coming soon</em></li>
-      <li><strong>Project Title</strong> - Role, platform - <em>coming soon</em></li>
-    </ul>
-
-    <h2>Writing samples</h2>
-    <ul>
-      <li>Dialogue sample - <em>coming soon</em></li>
-      <li>Quest/branching sample - <em>coming soon</em></li>
-    </ul>
-  </section>
-</BaseLayout>
+    <p>
+      Selected nar
