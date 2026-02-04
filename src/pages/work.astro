@@ -2,9 +2,38 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Work">
-  <section>
+<BaseLayout
+  title="Work - Anastasia Bessonova"
+  description="Selected narrative work and a flagship case study outlining approach, deliverables, and process."
+>
+  <section class="block reading flow">
     <h1>Work</h1>
-    <p>If you see this, rendering works.</p>
+    <p>
+      Selected narrative work and writing samples will be added here as projects are cleared for public display.
+      Some details may be redacted due to NDA.
+    </p>
   </section>
+
+  <section class="section block reading flow">
+    <h2>Flagship case study</h2>
+    <p>
+      A representative example of my approach - research-driven narrative design, world-building, and
+      production-aware implementation.
+    </p>
+
+    <p>
+      <a href="/work/flagship-case-study">Read the case study</a>
+    </p>
+  </section>
+
+  <section class="section block reading flow">
+    <h2>Writing samples</h2>
+    <p class="muted">
+      Available on request while I prepare NDA-safe public excerpts.
+    </p>
+  </section>
+
+  <style>
+    .muted { color: var(--muted); }
+  </style>
 </BaseLayout>
